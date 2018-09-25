@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView
+        android:id="@+id/textView"
+        style="@style/fragment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="filter" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/framelayout_filter_shodow"
+        android:id="@+id/Dealer_top_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find dealers by location and make"
+            android:id="@+id/Dealer_Top_text"
+            android:textSize="@dimen/Filter_Top_Text"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="15dp"/>
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_box"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:id="@+id/make_spinner"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_box"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:text="Search"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="@color/windowBackground"
+            android:background="@color/Green"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Dealer_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dealer_top_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Loading"
+        android:layout_below="@+id/Dealer_top_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Loading..."
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Nodata"
+        android:visibility="gone"
+        android:layout_below="@+id/Dealer_top_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Data Found"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/internetconnect"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/Dealer_top_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Internet connection"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/Filter_Top_Text"
+            />
+
+        <Button
+            android:id="@+id/internetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/filter_shape"
+            android:fontFamily="sans-serif"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

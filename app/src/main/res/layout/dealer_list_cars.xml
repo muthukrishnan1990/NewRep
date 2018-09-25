@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:orientation="vertical"
+    android:background="@drawable/framelayout_shodow">
+
+    <ImageView
+        android:id="@+id/section_car_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dealer_list_car_image_height"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make"
+        android:textSize="@dimen/Frame_Text"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:id="@+id/Make"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:textSize="@dimen/Frame_Text"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:id="@+id/Model"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="@dimen/Frame_Text"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:id="@+id/Year"/>
+
+</LinearLayout>

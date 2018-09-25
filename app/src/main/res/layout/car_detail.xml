@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/topbar_background">
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/leftarrow"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/Black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Car Detail"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:background="@drawable/background_with_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Filter_Car_Image"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_car3"
+                    android:id="@+id/Car_banner"/>
+
+                    <ImageView
+                        android:id="@+id/favorate_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fav_icon"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:id="@+id/favorate_icon1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fav_icon1"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Black"
+                    android:layout_below="@+id/Car_banner"
+                    android:id="@+id/Horizontal_Line"
+                    android:layout_marginTop="3dp"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Thump_recycler"
+                    android:layout_below="@+id/Horizontal_Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/car_thump_Height"
+                    android:id="@+id/Loading_Text"
+                    android:layout_below="@+id/Horizontal_Line"
+                    android:gravity="center"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:fontFamily="sans-serif"
+                    android:text="Loading..."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/car_thump_Height"
+                    android:id="@+id/Empty_Text"
+                    android:layout_below="@+id/Horizontal_Line"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:fontFamily="sans-serif"
+                    android:text="No Data Available"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Make_Model_Year"
+                        android:text="Make Model"
+                        android:fontFamily="sans-serif"
+                        android:textSize="@dimen/Filter_Top_Text"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/windowBackground"
+                        android:gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price"
+                                android:id="@+id/Price_id"
+                                android:fontFamily="sans-serif"
+                                android:textSize="@dimen/Filter_Top_Text"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="left">
+
+                                <ImageView
+                                    android:layout_width="@dimen/Location_icon_width"
+                                    android:layout_height="@dimen/Location_icon_Height"
+                                    android:src="@drawable/location_icon"/>
+
+                                <TextView
+                                    android:id="@+id/location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/Icon_to_Text_Margin"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/Filter_Top_Text" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/Rating_layout"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ratings"
+                                android:id="@+id/Rating_id"
+                                android:gravity="center"
+                                android:fontFamily="sans-serif"
+                                android:textSize="@dimen/Filter_Top_Text"/>
+                            <RatingBar
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Rating_Star"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:stepSize="0.1"
+                                android:rating="3.5"
+                                android:progressTint="@color/Yellow"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transmission"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:layout_marginTop="3dp"
+                            android:id="@+id/Trans_text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Miles Driven"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:id="@+id/KM_text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:layout_marginTop="3dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Condition"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:id="@+id/Condition_text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:layout_marginTop="3dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Black"
+                    android:layout_marginTop="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Compare Car"
+                        android:id="@+id/Comparecar_Button"
+                        android:textSize="25sp"
+                        android:textColor="@color/windowBackground"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Dealer Detail"
+                        android:id="@+id/Dealerdetail_Button"
+                        android:textSize="25sp"
+                        android:textColor="@color/windowBackground"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:id="@+id/Table_button"
+                    android:background="@drawable/car_deatail_shodow">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/Basic_Button"
+                        android:background="@drawable/border_radius">
+                        <!--android:background="@drawable/car_deatail_shodow">-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Basics"
+                            android:id="@+id/Basic_Text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/Spec_Button"
+                        android:background="@drawable/border_radius">
+                        <!--android:background="@drawable/car_deatail_shodow"-->
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Specification"
+                            android:id="@+id/Specification_Text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/Feature_Button"
+                        android:background="@drawable/border_radius">
+                        <!--android:background="@drawable/car_deatail_shodow"-->
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Feature"
+                            android:id="@+id/Feature_Text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/Filter_Top_Text"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Table_recycler"
+                    android:layout_below="@+id/Table_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

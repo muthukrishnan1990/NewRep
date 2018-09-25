@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/topbar_background">
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/leftarrow"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/Black"/>
+
+            <TextView
+                android:id="@+id/titleid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Carcompare"
+                android:gravity="center"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:background="@drawable/background_with_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <FrameLayout
+            android:id="@+id/carcompare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </FrameLayout>
+
+
+</LinearLayout>
+    </LinearLayout>

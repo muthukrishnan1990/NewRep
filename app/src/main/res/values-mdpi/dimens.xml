@@ -1,0 +1,51 @@
+<resources>
+
+    <!--Reside Menu-->
+    <dimen name="Reside_Menu_Left_Width">170dp</dimen>
+    <dimen name="Reside_Menu_Right_Width">150dp</dimen>
+    <dimen name="Reside_Icon_Width">30dp</dimen>
+    <dimen name="Reside_Text_Size">18sp</dimen>
+    <dimen name="Reside_Padding_Icons">5dp</dimen>
+
+    <!-- Home Page -->
+    <dimen name="Banner_Height">250dp</dimen>
+    <dimen name="Card_Height">400dp</dimen>
+    <dimen name="Card_Image">175dp</dimen>
+    <dimen name="Frame_Text">13sp</dimen>
+    <dimen name="Location_icon_width">20dp</dimen>
+    <dimen name="Location_icon_Height">20dp</dimen>
+    <dimen name="Icon_to_Text_Margin">20dp</dimen>
+
+    <dimen name="Compare_Card_Height">300dp</dimen>
+    <dimen name="Compare_Image">100dp</dimen>
+    <dimen name="versus_icon">30dp</dimen>
+    <dimen name="versus_icon_width">30dp</dimen>
+    <dimen name="versus_icon_Height">30dp</dimen>
+
+    <!-- Filter Page -->
+    <dimen name="Filter_Top_Text">17sp</dimen>
+    <dimen name="Filter_Car_Layout">300dp</dimen>
+    <dimen name="Filter_Car_Image">200dp</dimen>
+
+    <!-- Car Detail Thump Image-->
+    <dimen name="car_thump_width">150dp</dimen>
+    <dimen name="car_thump_Height">100dp</dimen>
+
+    <!--Dealer Detail-->
+    <dimen name="dealer_Banner_Height">150dp</dimen>
+    <dimen name="dealer_list_car_image_height">100dp</dimen>
+
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Filter Pop Up -->
+    <dimen name="Popup_Width">300dp</dimen>
+    <dimen name="Heading_title">20sp</dimen>
+    <dimen name="layout_height">30dp</dimen>
+    <dimen name="marginleft">10dp</dimen>
+    <dimen name="marginTop">1dp</dimen>
+    <dimen name="contact_us">80dp</dimen>
+    <dimen name="contact_height">25dp</dimen>
+    <dimen name="marginpadding">10dp</dimen>
+    <dimen name="setting_text">15sp</dimen>
+</resources>

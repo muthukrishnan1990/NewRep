@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/framelayout_filter_shodow"
+        android:id="@+id/filter_top_layout">
+
+        <TextView
+            android:id="@+id/Filter_Top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Make your search more easy and comfortable by filter"
+            android:textSize="@dimen/Filter_Top_Text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+        <RelativeLayout
+            android:id="@+id/filter_button"
+            android:layout_width="@dimen/width_filter"
+            android:layout_height="@dimen/height_filter"
+            android:background="@drawable/filter_shape"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+           android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/filter_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/filter_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:id="@+id/Filter_icon_text"
+                android:textSize="20sp"
+              android:paddingRight="10dp"
+                android:textColor="@color/windowBackground"
+                android:layout_toRightOf="@+id/filter_icon"
+                android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sort_button"
+            android:layout_width="@dimen/width_filter"
+            android:layout_height="@dimen/height_filter"
+            android:background="@drawable/sort_shape"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/filter_icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/arrowicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort"
+                android:id="@+id/Filter_icon_text1"
+                android:textSize="20sp"
+                android:textColor="@color/windowBackground"
+                android:layout_toRightOf="@+id/filter_icon1"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/filter_top_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Loading"
+        android:layout_below="@+id/Dealer_top_layout"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Loading..."
+            android:textSize="@dimen/Filter_Top_Text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Nodata"
+        android:visibility="gone"
+        android:layout_below="@+id/Dealer_top_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Data Found"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/internetconnect"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/filter_top_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Internet connection"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/Filter_Top_Text"
+                />
+
+        <Button
+            android:id="@+id/internetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/filter_shape"
+            android:fontFamily="sans-serif"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+</RelativeLayout>

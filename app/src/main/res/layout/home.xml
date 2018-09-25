@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/mainlayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/top_banner"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/Banner_Height"
+                android:background="@drawable/bannerimage"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/zipcode_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Enter Zipcode to Search\nCar for Particular Location"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/Frame_Text">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/Zipcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:background="@drawable/rounded_edittext"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:hint="Zip code"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/filter_shape"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/windowBackground"
+                        />
+
+                </LinearLayout>
+
+                <!-- Right side spacer -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/Card_Height"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Best_selling_price"
+                android:layout_below="@+id/top_banner"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/framelayout_shodow">
+
+                <TextView
+                    android:id="@+id/header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:clickable="false"
+                    android:padding="5dp"
+                    android:text="Best Selling Price"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/Frame_Text"
+                    android:textStyle="bold" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/selling_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show More"
+                    android:textColor="@color/windowBackground"
+                    android:id="@+id/selling_button"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/filter_shape"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/Card_Height"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Upcoming_cars"
+                android:layout_below="@+id/Best_selling_price"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/framelayout_shodow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Cars"
+                    android:layout_gravity="left" android:clickable="false"
+                    android:textColor="#808080" android:textSize="@dimen/Frame_Text" android:fontFamily="sans-serif" android:padding="5dp" android:textStyle="bold"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/upcoming_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show More"
+                    android:textColor="@color/windowBackground"
+                    android:id="@+id/upcoming_button"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/filter_shape"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/Compare_Card_Height"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Trending_compare"
+                android:layout_below="@+id/Upcoming_cars"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/framelayout_shodow"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trending Comparison"
+                    android:layout_gravity="left" android:clickable="false"
+                    android:textColor="#808080" android:textSize="@dimen/Frame_Text" android:fontFamily="sans-serif" android:padding="5dp" android:textStyle="bold"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Trending_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compare_new"
+                    android:textColor="@color/windowBackground"
+                    android:id="@+id/Trending_button"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/filter_shape"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

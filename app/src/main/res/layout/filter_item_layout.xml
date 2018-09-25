@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/framelayout_shodow"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Filter_Car_Image"
+            android:scaleType="fitXY"
+            android:id="@+id/filter_image"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filter_image">
+
+            <TextView
+                android:id="@+id/filter_makemodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Make Model"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/Frame_Text"/>
+
+            <LinearLayout
+                android:id="@+id/splite_id"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/filter_makemodel"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp">
+                    <TextView
+                        android:id="@+id/filter_price"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/filter_makemodel"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:text="price"
+                        android:fontFamily="sans-serif"
+                        android:textSize="@dimen/Frame_Text"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp">
+                    <ImageView
+                        android:layout_width="@dimen/Location_icon_Height"
+                        android:layout_height="@dimen/Location_icon_Height"
+                        android:src="@drawable/website"
+                        />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:text="Contact Dealer"
+                        android:textColor="@color/Darkred"
+                        android:textSize="@dimen/Frame_Text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp">
+
+                    <TextView
+                        android:id="@+id/stocktype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="New"
+                        android:textSize="@dimen/Frame_Text" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/splite_id"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp">
+                    <ImageView
+                        android:layout_width="@dimen/Location_icon_Height"
+                        android:layout_height="@dimen/Location_icon_Height"
+                        android:src="@drawable/location_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/Frame_Text" />
+                </LinearLayout>
+                <LinearLayout android:layout_weight="2"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp">
+                    <TextView
+                        android:id="@+id/mileagelist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_below="@+id/website"
+                        android:gravity="center_vertical"
+                        android:text="Miles"
+                        android:paddingLeft="@dimen/Icon_to_Text_Margin"
+                        android:textSize="@dimen/Frame_Text" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp">
+                <TextView
+                    android:id="@+id/colorlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Red"
+                    android:textSize="@dimen/Frame_Text" />
+            </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/websitedelear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/filter_makemodel">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    >
+                    <!--<ImageView
+                        android:layout_width="@dimen/Location_icon_Height"
+                        android:layout_height="@dimen/Location_icon_Height"
+                        android:src="@drawable/website" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Icon_to_Text_Margin"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:text="Website"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/Darkred"
+                        android:textSize="@dimen/Frame_Text" />-->
+
+                   <!-- <TextView
+                        android:id="@+id/mileagelist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_below="@+id/website"
+                        android:gravity="center_vertical"
+                        android:text="Miles"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/Frame_Text" />-->
+
+                </RelativeLayout>
+               <!-- <TextView
+                    android:id="@+id/stocktype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Icon_to_Text_Margin"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="New"
+                    android:paddingRight="5dp"
+                    android:textSize="@dimen/Frame_Text" />-->
+            </LinearLayout>
+
+          <!--  <LinearLayout
+                android:id="@+id/location_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1">
+
+                &lt;!&ndash;<ImageView
+                    android:layout_width="@dimen/Location_icon_Height"
+                    android:layout_height="@dimen/Location_icon_Height"
+                    android:src="@drawable/location_icon"/>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="@dimen/Icon_to_Text_Margin"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/Frame_Text" />&ndash;&gt;
+
+            </RelativeLayout>
+
+            </LinearLayout>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/Darkgray">
+    </LinearLayout>
+
+</LinearLayout>

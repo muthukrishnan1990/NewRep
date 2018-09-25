@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a9a9a9"
+    android:padding="@dimen/marginpadding">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="0dp"
+        android:text="CONTACT US"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Heading_title"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:textColor="@color/Black"
+        />
+    <EditText
+        android:id="@+id/firstnamelist"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textinputborder"
+        android:hint="Enter firstname"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:inputType="textPersonName" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/Black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:textColor="@color/Black"/>
+     <EditText
+        android:id="@+id/lastnamelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+        android:hint="Enter lastname"
+         android:background="@drawable/textinputborder"
+         android:gravity="bottom"
+         android:padding="10dp"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:inputType="textPersonName" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/Black"/>
+      </LinearLayout>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:textColor="@color/Black"
+        />
+
+    <EditText
+        android:id="@+id/emailnamelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textinputborder"
+        android:hint="Enter emailaddress"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:inputType="textEmailAddress" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PhoneNo"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Filter_Top_Text"
+       />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textinputborder"
+        android:hint="Enter phone number"
+        android:gravity="left"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:padding="10dp"
+        android:inputType="phone" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:textColor="@color/Black"
+        />
+    <EditText
+        android:id="@+id/commentdata"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textinputborder"
+        android:gravity="bottom"
+        android:maxLines="5"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:padding="10dp"
+        android:hint="Write comment"
+        android:textColorHint="#B0B0B0"
+        android:inputType="textCapSentences|textMultiLine" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/push_button1"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/Heading_title"
+        android:text="Submit"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Filter_Top_Text"
+        />
+    </LinearLayout>
+
+
+

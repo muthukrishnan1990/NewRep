@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e6e6e6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#e8e8e7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="Join FindYourCarApp And Receive More Leads for Free"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/Heading_title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Dealername"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Dealership Name"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text"
+                />
+
+            <EditText
+                android:id="@+id/Firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="First Name"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+            <EditText
+                android:id="@+id/Lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Last Name"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+            <EditText
+                android:id="@+id/Emailaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Email"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+
+            <EditText
+                android:id="@+id/PhoneNo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+            <EditText
+                android:id="@+id/WebsiteUrl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Website url"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+            <EditText
+                android:id="@+id/Inventoryprovide"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:hint="Inventory Provider"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+            <Button
+                android:id="@+id/push_button"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/marginpadding"
+    android:background="#a9a9a9"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Join FindYourCarApp And Receive More Leads for Free"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/Dealername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:hint="Dealership Name"
+        android:layout_marginTop="@dimen/marginTop"
+        android:backgroundTint="@color/Transprent"
+        android:inputType="text"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <EditText
+        android:id="@+id/Firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:inputType="text"
+        android:backgroundTint="@color/Transprent"
+        android:hint="First Name"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+
+    <EditText
+        android:id="@+id/Lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:hint="Last Name"
+        android:backgroundTint="@color/Transprent"
+        android:inputType="text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <EditText
+        android:id="@+id/Emailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:inputType="text"
+        android:backgroundTint="@color/Transprent"
+        android:hint="Email"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <EditText
+        android:id="@+id/PhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:inputType="phone"
+        android:backgroundTint="@color/Transprent"
+        android:hint="Phone"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <EditText
+        android:id="@+id/WebsiteUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:inputType="text"
+        android:backgroundTint="@color/Transprent"
+        android:hint="Website url"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <EditText
+        android:id="@+id/Inventoryprovide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:hint="Inventory Provider"
+        android:inputType="text"
+        android:backgroundTint="@color/Transprent"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        />
+    <Button
+        android:id="@+id/push_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:padding="15dp"
+        android:text="Submit"
+        android:textSize="@dimen/Filter_Top_Text"
+        android:paddingLeft="20dp"/>
+</LinearLayout>

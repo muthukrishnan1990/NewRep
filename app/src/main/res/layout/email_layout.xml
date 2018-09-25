@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="@dimen/marginpadding"
+        android:background="@drawable/corner_radius"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/Transprent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/close"
+            android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ib_close"
+       >
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Firstname"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter firstname"
+            android:backgroundTint="@color/Transprent"
+            android:background="@drawable/textinputborder"
+            android:windowSoftInputMode="stateVisible"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="@dimen/Filter_Top_Text"
+           />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Lastname"
+            android:textColor="@color/Black"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+
+        <EditText
+            android:id="@+id/editTextlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:windowSoftInputMode="stateVisible"
+            android:background="@drawable/textinputborder"
+            android:backgroundTint="@color/Transprent"
+            android:hint="Enter Lastname"
+            android:padding="5dp"
+            android:inputType="text"
+            android:textSize="@dimen/Filter_Top_Text"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Black"
+            />
+        <TextView
+            android:id="@+id/emaildata"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="E-mail"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Filter_Top_Text"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:windowSoftInputMode="stateVisible"
+            android:background="@drawable/textinputborder"
+            android:backgroundTint="@color/Transprent"
+            android:hint="Enter Email"
+            android:padding="5dp"
+            android:inputType="text"
+            android:textSize="@dimen/Filter_Top_Text"
+           />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/phoneno"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Phone No"
+            android:textColor="@color/Black"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:layout_width="match_parent"
+            android:windowSoftInputMode="stateVisible"
+            android:background="@drawable/textinputborder"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone"
+            android:backgroundTint="@color/Transprent"
+            android:textSize="@dimen/Filter_Top_Text"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Black"
+            />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Contact Preference"
+            android:textColor="@color/Black"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/Filter_Top_Text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/checkbox_meat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail"
+                android:backgroundTint="@color/Black"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/Filter_Top_Text"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/checkbox_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:backgroundTint="@color/Black"
+                android:textColor="@color/Black"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="150dp"
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/Filter_Top_Text"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+

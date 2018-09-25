@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/Popup_Width"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Darkgray"
+            android:id="@+id/Popup_Top_text"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/Popup_Text"
+                android:text="Select option to filter search"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/Make_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/Model_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/Year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:background="@color/Darkred"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:textColor="@color/windowBackground"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/cancel_id"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:background="@color/Green"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:textColor="@color/windowBackground"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/search_id"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

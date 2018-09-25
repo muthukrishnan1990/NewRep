@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Campare_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:id="@+id/first_layout"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_thumbnail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Compare_Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="top"/>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_thumbnail1">
+
+                    <TextView
+                        android:id="@+id/Trending_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Make"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/Frame_Text"
+                        android:fontFamily="sans-serif"/>
+
+                    <TextView
+                        android:id="@+id/Trending_model"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/Trending_make"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Select car 1"
+                        android:textSize="@dimen/Frame_Text"
+                        android:fontFamily="sans-serif"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/second_layout"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_thumbnail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Compare_Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="top"/>
+
+                <RelativeLayout
+                    android:id="@+id/second_bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_thumbnail2">
+
+                    <TextView
+                        android:id="@+id/Trending_Secocnd_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Make"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/Frame_Text"
+                        android:fontFamily="sans-serif"/>
+
+                    <TextView
+                        android:id="@+id/Trending_Secocnd_model"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/Trending_Secocnd_make"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Select car 2"
+                        android:textSize="@dimen/Frame_Text"
+                        android:fontFamily="sans-serif" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+        android:id="@+id/versus_image"
+        android:layout_width="@dimen/versus_icon_width"
+        android:layout_height="@dimen/versus_icon_Height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/versus_icon"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vs" />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Campare_frame"
+        android:background="@color/Darkgray"
+        android:text="Compare above cars"
+        android:id="@+id/Compare_Button"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/windowBackground"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table_button"
+        android:background="@drawable/car_deatail_shodow">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Basic_Button"
+            android:background="@drawable/border_radius">
+            <!--android:background="@drawable/car_deatail_shodow">-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basics"
+                android:id="@+id/Basic_Text"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Spec_Button"
+            android:background="@drawable/border_radius">
+            <!--android:background="@drawable/car_deatail_shodow"-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specification"
+                android:id="@+id/Specification_Text"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Feature_Button"
+            android:background="@drawable/border_radius">
+            <!--android:background="@drawable/car_deatail_shodow"-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feature"
+                android:id="@+id/Feature_Text"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Table_recycler"
+        android:layout_below="@+id/Table_button"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

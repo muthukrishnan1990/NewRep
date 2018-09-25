@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="6dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:id="@+id/first_layout"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_thumbnail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Compare_Image"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="top"/>
+
+                    <RelativeLayout
+                        android:id="@+id/bottom_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_thumbnail1">
+
+                        <TextView
+                            android:id="@+id/Trending_make"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left"
+                            android:text="Make"
+                            android:textSize="@dimen/Frame_Text" />
+
+                        <TextView
+                            android:id="@+id/Trending_model"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/Trending_make"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:gravity="left"
+                            android:text="Model"
+                            android:textSize="@dimen/Frame_Text"
+                            android:fontFamily="sans-serif"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/second_layout"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_thumbnail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Compare_Image"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="top"/>
+
+                    <RelativeLayout
+                        android:id="@+id/second_bottom_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_thumbnail2">
+
+                        <TextView
+                            android:id="@+id/Trending_Secocnd_make"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left"
+                            android:text="Make"
+                            android:textSize="@dimen/Frame_Text"
+                            android:fontFamily="sans-serif"/>
+
+                        <TextView
+                            android:id="@+id/Trending_Secocnd_model"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/Trending_Secocnd_make"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:gravity="left"
+                            android:text="Model"
+                            android:textSize="@dimen/Frame_Text"
+                            android:fontFamily="sans-serif"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/versus_image"
+                android:layout_width="@dimen/versus_icon_width"
+                android:layout_height="@dimen/versus_icon_Height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/versus_icon"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vs" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

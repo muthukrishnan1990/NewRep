@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Darkgray"
+            android:id="@+id/Popup_Top_text"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Select option to filter search"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:textSize="@dimen/Filter_Top_Text"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/Popup_Top_text">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/border_radius">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Search Near"
+                            android:id="@+id/zipcode_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:id="@+id/Make_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Make"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Model"
+                            android:id="@+id/Model_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Year"
+                            android:id="@+id/Year_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:id="@+id/Price_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:id="@+id/Mileage_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Mileage"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Conditon"
+                            android:id="@+id/Condition_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transmission"
+                            android:id="@+id/Transmission_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trim"
+                            android:id="@+id/Trim_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fuel"
+                            android:id="@+id/Fuel_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Drivetrain"
+                            android:id="@+id/Drivetrain_id"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/Filter_Top_Text"/>
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/makelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/modellist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/year_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Max Year to Min Year \n search between years"
+                        android:textColor="@color/Darkgray"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/year_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1990 to 2000"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/pricelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/conditionlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/transmissionlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/mileage_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Max and Min Mileage to Search"
+                        android:textColor="@color/Darkgray"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Min mileage to Search:"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/min_mileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Enter Min mileage"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/corner_radius"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Max mileage to Search:"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/max_mileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Enter Max mileage"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/corner_radius"
+                        android:cursorVisible="false"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="15sp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sort_shape"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/reset"
+                            android:text="Reset"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/marginleft"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/filter_shape"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/submit"
+                            android:text="Submit"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/marginleft"
+                            android:textAllCaps="false"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zipcode_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search Near"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="zipcode to Search:"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/zipcodesearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="zipcode"
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/corner_radius"
+                        android:cursorVisible="false"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Radius to Search:"
+                        android:textColor="@color/Black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/radiussearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Radius"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/corner_radius"
+                        android:cursorVisible="false"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="15sp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sort_shape"
+                            android:id="@+id/zipreset"
+                            android:text="Reset"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/marginleft"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/filter_shape"
+                            android:id="@+id/zipsubmit"
+                            android:text="Submit"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/marginleft"
+                            android:textAllCaps="false"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/trimlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fuellist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/drivetrainlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:background="@color/Darkred"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:textColor="@color/windowBackground"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/cancel_id"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:background="@color/Green"
+                    android:textSize="@dimen/Filter_Top_Text"
+                    android:textColor="@color/windowBackground"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/search_id"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<resources>
+
+    <!--Reside Menu-->
+    <dimen name="Reside_Menu_Left_Width">300dp</dimen>
+    <dimen name="Reside_Menu_Right_Width">230dp</dimen>
+    <dimen name="Reside_Icon_Width">50dp</dimen>
+    <dimen name="Reside_Text_Size">30sp</dimen>
+    <dimen name="Reside_Padding_Icons">8dp</dimen>
+
+
+    <!-- Home Page -->
+    <dimen name="Banner_Height">450dp</dimen>
+    <dimen name="Card_Height">700dp</dimen>
+    <dimen name="Card_Image">350dp</dimen>
+    <dimen name="Frame_Text">20sp</dimen>
+    <dimen name="Location_icon_width">30dp</dimen>
+    <dimen name="Location_icon_Height">30dp</dimen>
+    <dimen name="Icon_to_Text_Margin">35dp</dimen>
+
+    <dimen name="Compare_Card_Height">500dp</dimen>
+    <dimen name="Compare_Image">200dp</dimen>
+    <dimen name="versus_icon">80dp</dimen>
+    <dimen name="versus_icon_width">60dp</dimen>
+    <dimen name="versus_icon_Height">60dp</dimen>
+
+    <!-- Filter Page -->
+    <dimen name="Filter_Top_Text">25sp</dimen>
+    <dimen name="Filter_Car_Layout">500dp</dimen>
+    <dimen name="Filter_Car_Image">350dp</dimen>
+
+    <!-- Car Detail Thump Image-->
+    <dimen name="car_thump_width">200dp</dimen>
+    <dimen name="car_thump_Height">150dp</dimen>
+
+    <!--Dealer Detail-->
+    <dimen name="dealer_Banner_Height">400dp</dimen>
+    <dimen name="dealer_list_car_image_height">250dp</dimen>
+
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Filter Pop Up -->
+    <dimen name="Popup_Width">450dp</dimen>
+    <dimen name="Heading_title">35sp</dimen>
+    <dimen name="layout_height">100dp</dimen>
+    <dimen name="marginleft">40dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+    <dimen name="contact_us">300dp</dimen>
+    <dimen name="contact_height">100dp</dimen>
+    <dimen name="marginpadding">70dp</dimen>
+    <!-- filter button -->
+    <dimen name="width_filter">120dp</dimen>
+    <dimen name="height_filter">50sp</dimen>
+    <dimen name="setting_text">30sp</dimen>
+</resources>

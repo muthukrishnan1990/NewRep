@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_foreground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/Linearlayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/section_make_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/Darkred"
+            android:text="Make Modle Year "/>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/car_thump_Height" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/price"
+            android:text="Price"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/price1"
+            android:layout_alignBottom="@+id/price1"
+            android:layout_toRightOf="@+id/price1"
+            android:layout_toEndOf="@+id/price1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:id="@+id/mile"
+            android:text="Milage"
+            android:textColor="#000"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price1"
+            android:layout_alignLeft="@+id/price1"
+            android:layout_alignStart="@+id/price1"
+            android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:id="@+id/stocktype"
+                android:text="New"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/price1"
+                android:layout_alignBottom="@+id/price1"
+                android:layout_toRightOf="@+id/price1"
+                android:layout_toEndOf="@+id/price1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+            <TextView
+                android:id="@+id/Location"
+                android:text="Location"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/price1"
+                android:layout_alignBottom="@+id/price1"
+                android:layout_toRightOf="@+id/price1"
+                android:layout_toEndOf="@+id/price1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Linearlayout"
+        android:background="#000"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

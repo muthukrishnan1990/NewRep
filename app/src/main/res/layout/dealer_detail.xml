@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/Linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/topbar_background">
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/leftarrow"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/Black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dealer Detail"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:textSize="@dimen/Filter_Top_Text" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:background="@drawable/background_with_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Dealer_Banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dealer_Banner_Height"
+            android:scaleType="fitXY"
+            android:src="@drawable/list_car3" />
+
+        <TextView
+            android:id="@+id/Dealer_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="sons kia"
+            android:textSize="@dimen/Filter_Top_Text" />
+
+        <TextView
+            android:id="@+id/Dealer_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Location"
+            android:textSize="@dimen/Filter_Top_Text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:id="@+id/Dealerphone">
+            <ImageView
+                android:id="@+id/DealerphoneNo"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/caller" />
+
+                <TextView
+                    android:id="@+id/Dealercall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DealerphoneNo"
+                    android:text="Call"
+                    android:textColor="@color/Darkgreen"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:id="@+id/Dealermessage">
+            <ImageView
+                android:id="@+id/Dealermessagemail"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:id="@+id/MessageDealer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Dealermessage"
+                android:textColor="@color/Darkred"
+                android:text="Message"
+                android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/DealerLocation">
+
+            <ImageView
+                android:id="@+id/DealerLocationview"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/LocationDealer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/Blue"
+                android:layout_toRightOf="@+id/DealerLocation"
+                android:text="Location"
+                android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/make_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/spinner_box_dealer"
+        android:textAlignment="center"
+        android:drawableRight="@drawable/ic_arrow_down"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dealer_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/splash_iv"
+            android:src="@drawable/splash"
+            />
+
+        <ProgressBar
+        android:id="@+id/loadingdata"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+        />
+        <Button
+            android:id="@+id/internetbtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:background="@drawable/filter_shape"
+            android:fontFamily="sans-serif"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
